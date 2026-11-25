@@ -20,8 +20,8 @@
       <div class="chapter-links">
         <a href="#overview">Overview</a>
         <a href="#method">Method</a>
-        <a href="#matched-frames">Matched Frames</a>
         <a href="#generated-videos">Generated Videos</a>
+        <a href="#matched-frames">Matched Frames</a>
         <a href="#evaluation">Evaluation</a>
       </div>
     </div>
@@ -361,566 +361,6 @@
         </figure>
         <p class="scope">On bidirectional MiniMax-H3, ARLIFT uses spatial guidance without the memory step shown above.</p>
       </section>
-
-      <section class="results" id="matched-frames" aria-labelledby="frames-title">
-        <header class="section-heading">
-          <h2 id="frames-title">Matched Frames</h2>
-          <p>Each scene uses the same prompt and seed across methods. Read across a row to follow one method over time, or down a column to compare methods at the same frame.</p>
-          <p class="caption reading-note">Frames are numbered from zero at 16 fps. Select a frame to zoom all three images in its column by 2.5×. Select again to restore the full frames.</p>
-        </header>
-        <section class="frame-family" aria-labelledby="krea-frames-title">
-          <h3 class="model-name" id="krea-frames-title">Krea Realtime 14B</h3>
-          <figure class="frame-case" aria-labelledby="sunset-over-the-dunes-title">
-            <figcaption>
-              <h4 id="sunset-over-the-dunes-title">Sunset over the Dunes</h4>
-              <p class="caption" id="sunset-over-the-dunes-cue">Watch the sun enter from the left, then count the bright discs in frame 111.</p>
-            </figcaption>
-            <div class="matrix-wrap">
-              <table class="frame-matrix" aria-labelledby="sunset-over-the-dunes-title" aria-describedby="sunset-over-the-dunes-cue">
-                <colgroup><col class="method-col"><col span="4"></colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">Method</th>
-                    <th scope="col" data-frame="0" data-focus-x="0.27" data-focus-y="0.25" id="sunset-over-the-dunes-f0">Frame 0</th>
-                    <th scope="col" data-frame="37" data-focus-x="0.19" data-focus-y="0.22" id="sunset-over-the-dunes-f37">Frame 37</th>
-                    <th scope="col" data-frame="74" data-focus-x="0.14" data-focus-y="0.16" id="sunset-over-the-dunes-f74">Frame 74</th>
-                    <th scope="col" data-frame="111" data-focus-x="0.34" data-focus-y="0.16" id="sunset-over-the-dunes-f111">Frame 111</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="sunset-over-the-dunes-cinescale">CineScale</th>
-                    <td headers="sunset-over-the-dunes-cinescale sunset-over-the-dunes-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/cinescale-000.webp" width="1300" height="750" alt="Sunset over the Dunes, CineScale, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-cinescale sunset-over-the-dunes-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/cinescale-037.webp" width="1300" height="750" alt="Sunset over the Dunes, CineScale, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-cinescale sunset-over-the-dunes-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/cinescale-074.webp" width="1300" height="750" alt="Sunset over the Dunes, CineScale, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-cinescale sunset-over-the-dunes-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/cinescale-111.webp" width="1300" height="750" alt="Sunset over the Dunes, CineScale, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="sunset-over-the-dunes-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                    <td headers="sunset-over-the-dunes-freeswim sunset-over-the-dunes-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/freeswim-000.webp" width="1300" height="750" alt="Sunset over the Dunes, FreeSwim*, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-freeswim sunset-over-the-dunes-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/freeswim-037.webp" width="1300" height="750" alt="Sunset over the Dunes, FreeSwim*, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-freeswim sunset-over-the-dunes-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/freeswim-074.webp" width="1300" height="750" alt="Sunset over the Dunes, FreeSwim*, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-freeswim sunset-over-the-dunes-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/freeswim-111.webp" width="1300" height="750" alt="Sunset over the Dunes, FreeSwim*, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="sunset-over-the-dunes-arlift" class="arlift-name">ARLIFT</th>
-                    <td headers="sunset-over-the-dunes-arlift sunset-over-the-dunes-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/arlift-000.webp" width="1300" height="750" alt="Sunset over the Dunes, ARLIFT, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-arlift sunset-over-the-dunes-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/arlift-037.webp" width="1300" height="750" alt="Sunset over the Dunes, ARLIFT, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-arlift sunset-over-the-dunes-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/arlift-074.webp" width="1300" height="750" alt="Sunset over the Dunes, ARLIFT, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="sunset-over-the-dunes-arlift sunset-over-the-dunes-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/sunset-over-the-dunes/arlift-111.webp" width="1300" height="750" alt="Sunset over the Dunes, ARLIFT, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </figure>
-          <figure class="frame-case" aria-labelledby="rabbit-by-a-window-title">
-            <figcaption>
-              <h4 id="rabbit-by-a-window-title">Rabbit by a Window</h4>
-              <p class="caption" id="rabbit-by-a-window-cue">Look at the fine hairs along the backlit edges of the rabbit’s ears.</p>
-            </figcaption>
-            <div class="matrix-wrap">
-              <table class="frame-matrix" data-zoom-target="subject" aria-labelledby="rabbit-by-a-window-title" aria-describedby="rabbit-by-a-window-cue">
-                <colgroup><col class="method-col"><col span="4"></colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">Method</th>
-                    <th scope="col" data-frame="0" data-focus-x="0.57" data-focus-y="0.283" id="rabbit-by-a-window-f0">Frame 0</th>
-                    <th scope="col" data-frame="37" data-focus-x="0.661" data-focus-y="0.285" id="rabbit-by-a-window-f37">Frame 37</th>
-                    <th scope="col" data-frame="74" data-focus-x="0.71" data-focus-y="0.3" id="rabbit-by-a-window-f74">Frame 74</th>
-                    <th scope="col" data-frame="111" data-focus-x="0.723" data-focus-y="0.299" id="rabbit-by-a-window-f111">Frame 111</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="rabbit-by-a-window-cinescale">CineScale</th>
-                    <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/cinescale-000.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/cinescale-037.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/cinescale-074.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/cinescale-111.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="rabbit-by-a-window-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                    <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/freeswim-000.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/freeswim-037.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/freeswim-074.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/freeswim-111.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="rabbit-by-a-window-arlift" class="arlift-name">ARLIFT</th>
-                    <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/arlift-000.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/arlift-037.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/arlift-074.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/rabbit-by-a-window/arlift-111.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </figure>
-          <figure class="frame-case" aria-labelledby="dancer-in-rehearsal-title">
-            <figcaption>
-              <h4 id="dancer-in-rehearsal-title">Dancer in Rehearsal</h4>
-              <p class="caption" id="dancer-in-rehearsal-cue">Follow the edge of the dark skirt against the pale underskirt as the dancer turns.</p>
-            </figcaption>
-            <div class="matrix-wrap">
-              <table class="frame-matrix" data-zoom-target="subject" aria-labelledby="dancer-in-rehearsal-title" aria-describedby="dancer-in-rehearsal-cue">
-                <colgroup><col class="method-col"><col span="4"></colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">Method</th>
-                    <th scope="col" data-frame="0" data-focus-x="0.562" data-focus-y="0.665" id="dancer-in-rehearsal-f0">Frame 0</th>
-                    <th scope="col" data-frame="37" data-focus-x="0.501" data-focus-y="0.579" id="dancer-in-rehearsal-f37">Frame 37</th>
-                    <th scope="col" data-frame="74" data-focus-x="0.548" data-focus-y="0.625" id="dancer-in-rehearsal-f74">Frame 74</th>
-                    <th scope="col" data-frame="111" data-focus-x="0.538" data-focus-y="0.612" id="dancer-in-rehearsal-f111">Frame 111</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="dancer-in-rehearsal-cinescale">CineScale</th>
-                    <td headers="dancer-in-rehearsal-cinescale dancer-in-rehearsal-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/cinescale-000.webp" width="1300" height="750" alt="Dancer in Rehearsal, CineScale, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-cinescale dancer-in-rehearsal-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/cinescale-037.webp" width="1300" height="750" alt="Dancer in Rehearsal, CineScale, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-cinescale dancer-in-rehearsal-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/cinescale-074.webp" width="1300" height="750" alt="Dancer in Rehearsal, CineScale, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-cinescale dancer-in-rehearsal-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/cinescale-111.webp" width="1300" height="750" alt="Dancer in Rehearsal, CineScale, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="dancer-in-rehearsal-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                    <td headers="dancer-in-rehearsal-freeswim dancer-in-rehearsal-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/freeswim-000.webp" width="1300" height="750" alt="Dancer in Rehearsal, FreeSwim*, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-freeswim dancer-in-rehearsal-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/freeswim-037.webp" width="1300" height="750" alt="Dancer in Rehearsal, FreeSwim*, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-freeswim dancer-in-rehearsal-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/freeswim-074.webp" width="1300" height="750" alt="Dancer in Rehearsal, FreeSwim*, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-freeswim dancer-in-rehearsal-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/freeswim-111.webp" width="1300" height="750" alt="Dancer in Rehearsal, FreeSwim*, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="dancer-in-rehearsal-arlift" class="arlift-name">ARLIFT</th>
-                    <td headers="dancer-in-rehearsal-arlift dancer-in-rehearsal-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/arlift-000.webp" width="1300" height="750" alt="Dancer in Rehearsal, ARLIFT, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-arlift dancer-in-rehearsal-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/arlift-037.webp" width="1300" height="750" alt="Dancer in Rehearsal, ARLIFT, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-arlift dancer-in-rehearsal-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/arlift-074.webp" width="1300" height="750" alt="Dancer in Rehearsal, ARLIFT, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="dancer-in-rehearsal-arlift dancer-in-rehearsal-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/dancer-in-rehearsal/arlift-111.webp" width="1300" height="750" alt="Dancer in Rehearsal, ARLIFT, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </figure>
-        </section>
-        <section class="frame-family" aria-labelledby="longlive-frames-title">
-          <h3 class="model-name" id="longlive-frames-title">LongLive 2.0 5B</h3>
-          <figure class="frame-case" aria-labelledby="glass-pendulum-title">
-            <figcaption>
-              <h4 id="glass-pendulum-title">Glass Pendulum</h4>
-              <p class="caption" id="glass-pendulum-cue">Watch the highlight along the outer edge of the glass sphere as it swings.</p>
-            </figcaption>
-            <div class="matrix-wrap">
-              <table class="frame-matrix" aria-labelledby="glass-pendulum-title" aria-describedby="glass-pendulum-cue">
-                <colgroup><col class="method-col"><col span="4"></colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">Method</th>
-                    <th scope="col" data-frame="0" data-focus-x="0.56" data-focus-y="0.60" id="glass-pendulum-f0">Frame 0</th>
-                    <th scope="col" data-frame="37" data-focus-x="0.55" data-focus-y="0.60" id="glass-pendulum-f37">Frame 37</th>
-                    <th scope="col" data-frame="74" data-focus-x="0.53" data-focus-y="0.60" id="glass-pendulum-f74">Frame 74</th>
-                    <th scope="col" data-frame="111" data-focus-x="0.49" data-focus-y="0.61" id="glass-pendulum-f111">Frame 111</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="glass-pendulum-cinescale">CineScale</th>
-                    <td headers="glass-pendulum-cinescale glass-pendulum-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/cinescale-000.webp" width="1300" height="715" alt="Glass Pendulum, CineScale, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-cinescale glass-pendulum-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/cinescale-037.webp" width="1300" height="715" alt="Glass Pendulum, CineScale, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-cinescale glass-pendulum-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/cinescale-074.webp" width="1300" height="715" alt="Glass Pendulum, CineScale, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-cinescale glass-pendulum-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/cinescale-111.webp" width="1300" height="715" alt="Glass Pendulum, CineScale, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="glass-pendulum-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                    <td headers="glass-pendulum-freeswim glass-pendulum-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/freeswim-000.webp" width="1300" height="715" alt="Glass Pendulum, FreeSwim*, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-freeswim glass-pendulum-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/freeswim-037.webp" width="1300" height="715" alt="Glass Pendulum, FreeSwim*, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-freeswim glass-pendulum-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/freeswim-074.webp" width="1300" height="715" alt="Glass Pendulum, FreeSwim*, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-freeswim glass-pendulum-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/freeswim-111.webp" width="1300" height="715" alt="Glass Pendulum, FreeSwim*, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="glass-pendulum-arlift" class="arlift-name">ARLIFT</th>
-                    <td headers="glass-pendulum-arlift glass-pendulum-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/arlift-000.webp" width="1300" height="715" alt="Glass Pendulum, ARLIFT, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-arlift glass-pendulum-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/arlift-037.webp" width="1300" height="715" alt="Glass Pendulum, ARLIFT, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-arlift glass-pendulum-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/arlift-074.webp" width="1300" height="715" alt="Glass Pendulum, ARLIFT, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="glass-pendulum-arlift glass-pendulum-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/glass-pendulum/arlift-111.webp" width="1300" height="715" alt="Glass Pendulum, ARLIFT, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </figure>
-          <figure class="frame-case" aria-labelledby="painted-ceramic-tiles-title">
-            <figcaption>
-              <h4 id="painted-ceramic-tiles-title">Painted Ceramic Tiles</h4>
-              <p class="caption" id="painted-ceramic-tiles-cue">Follow the painted lines on the front tile as the viewing angle shifts.</p>
-            </figcaption>
-            <div class="matrix-wrap">
-              <table class="frame-matrix" aria-labelledby="painted-ceramic-tiles-title" aria-describedby="painted-ceramic-tiles-cue">
-                <colgroup><col class="method-col"><col span="4"></colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">Method</th>
-                    <th scope="col" data-frame="0" data-focus-x="0.59" data-focus-y="0.63" id="painted-ceramic-tiles-f0">Frame 0</th>
-                    <th scope="col" data-frame="37" data-focus-x="0.57" data-focus-y="0.63" id="painted-ceramic-tiles-f37">Frame 37</th>
-                    <th scope="col" data-frame="74" data-focus-x="0.55" data-focus-y="0.62" id="painted-ceramic-tiles-f74">Frame 74</th>
-                    <th scope="col" data-frame="111" data-focus-x="0.55" data-focus-y="0.61" id="painted-ceramic-tiles-f111">Frame 111</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="painted-ceramic-tiles-cinescale">CineScale</th>
-                    <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/cinescale-000.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/cinescale-037.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/cinescale-074.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/cinescale-111.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="painted-ceramic-tiles-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                    <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/freeswim-000.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/freeswim-037.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/freeswim-074.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/freeswim-111.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="painted-ceramic-tiles-arlift" class="arlift-name">ARLIFT</th>
-                    <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/arlift-000.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/arlift-037.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/arlift-074.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/painted-ceramic-tiles/arlift-111.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </figure>
-          <figure class="frame-case" aria-labelledby="violinist-in-rehearsal-title">
-            <figcaption>
-              <h4 id="violinist-in-rehearsal-title">Violinist in Rehearsal</h4>
-              <p class="caption" id="violinist-in-rehearsal-cue">Track the bow where it crosses the strings as the violinist changes direction.</p>
-            </figcaption>
-            <div class="matrix-wrap">
-              <table class="frame-matrix" data-zoom-target="subject" aria-labelledby="violinist-in-rehearsal-title" aria-describedby="violinist-in-rehearsal-cue">
-                <colgroup><col class="method-col"><col span="4"></colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">Method</th>
-                    <th scope="col" data-frame="0" data-focus-x="0.449" data-focus-y="0.529" id="violinist-in-rehearsal-f0">Frame 0</th>
-                    <th scope="col" data-frame="37" data-focus-x="0.452" data-focus-y="0.547" id="violinist-in-rehearsal-f37">Frame 37</th>
-                    <th scope="col" data-frame="74" data-focus-x="0.442" data-focus-y="0.511" id="violinist-in-rehearsal-f74">Frame 74</th>
-                    <th scope="col" data-frame="111" data-focus-x="0.456" data-focus-y="0.538" id="violinist-in-rehearsal-f111">Frame 111</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="violinist-in-rehearsal-cinescale">CineScale</th>
-                    <td headers="violinist-in-rehearsal-cinescale violinist-in-rehearsal-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/cinescale-000.webp" width="1300" height="715" alt="Violinist in Rehearsal, CineScale, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-cinescale violinist-in-rehearsal-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/cinescale-037.webp" width="1300" height="715" alt="Violinist in Rehearsal, CineScale, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-cinescale violinist-in-rehearsal-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/cinescale-074.webp" width="1300" height="715" alt="Violinist in Rehearsal, CineScale, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-cinescale violinist-in-rehearsal-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/cinescale-111.webp" width="1300" height="715" alt="Violinist in Rehearsal, CineScale, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="violinist-in-rehearsal-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                    <td headers="violinist-in-rehearsal-freeswim violinist-in-rehearsal-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/freeswim-000.webp" width="1300" height="715" alt="Violinist in Rehearsal, FreeSwim*, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-freeswim violinist-in-rehearsal-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/freeswim-037.webp" width="1300" height="715" alt="Violinist in Rehearsal, FreeSwim*, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-freeswim violinist-in-rehearsal-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/freeswim-074.webp" width="1300" height="715" alt="Violinist in Rehearsal, FreeSwim*, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-freeswim violinist-in-rehearsal-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/freeswim-111.webp" width="1300" height="715" alt="Violinist in Rehearsal, FreeSwim*, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="violinist-in-rehearsal-arlift" class="arlift-name">ARLIFT</th>
-                    <td headers="violinist-in-rehearsal-arlift violinist-in-rehearsal-f0">
-                      <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/arlift-000.webp" width="1300" height="715" alt="Violinist in Rehearsal, ARLIFT, frame 0" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-arlift violinist-in-rehearsal-f37">
-                      <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/arlift-037.webp" width="1300" height="715" alt="Violinist in Rehearsal, ARLIFT, frame 37" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-arlift violinist-in-rehearsal-f74">
-                      <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/arlift-074.webp" width="1300" height="715" alt="Violinist in Rehearsal, ARLIFT, frame 74" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                    <td headers="violinist-in-rehearsal-arlift violinist-in-rehearsal-f111">
-                      <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
-                        <img src="assets/frames/violinist-in-rehearsal/arlift-111.webp" width="1300" height="715" alt="Violinist in Rehearsal, ARLIFT, frame 111" loading="lazy" decoding="async">
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </figure>
-        </section>
-      </section>
     </div>
 
     <section class="films" id="generated-videos" aria-labelledby="videos-title">
@@ -974,6 +414,90 @@
                 </div>
                 <figcaption class="caption" id="krea_folding_fan-title">Performer with a Folding Fan</figcaption>
               </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="krea_02-native-label">Native <span class="dimensions">832 × 480</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="832" height="480" controls muted playsinline preload="metadata"
+                               aria-labelledby="krea_02-title krea_02-native-label" poster="assets/posters/krea_02_lr.jpg" src="assets/videos/krea_02_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="krea_02-arlift-label">ARLIFT <span class="dimensions">1664 × 960</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
+                               aria-labelledby="krea_02-title krea_02-arlift-label" poster="assets/posters/krea_02.jpg" src="assets/videos/krea_02.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="krea_02-title">Cooking by a Kitchen Window</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="krea_22-native-label">Native <span class="dimensions">832 × 480</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="832" height="480" controls muted playsinline preload="metadata"
+                               aria-labelledby="krea_22-title krea_22-native-label" poster="assets/posters/krea_22_lr.jpg" src="assets/videos/krea_22_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="krea_22-arlift-label">ARLIFT <span class="dimensions">1664 × 960</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
+                               aria-labelledby="krea_22-title krea_22-arlift-label" poster="assets/posters/krea_22.jpg" src="assets/videos/krea_22.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="krea_22-title">Robin on a Mossy Branch</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="krea_26-native-label">Native <span class="dimensions">832 × 480</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="832" height="480" controls muted playsinline preload="metadata"
+                               aria-labelledby="krea_26-title krea_26-native-label" poster="assets/posters/krea_26_lr.jpg" src="assets/videos/krea_26_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="krea_26-arlift-label">ARLIFT <span class="dimensions">1664 × 960</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
+                               aria-labelledby="krea_26-title krea_26-arlift-label" poster="assets/posters/krea_26.jpg" src="assets/videos/krea_26.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="krea_26-title">Playing a Vinyl Record</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="krea_60-native-label">Native <span class="dimensions">832 × 480</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="832" height="480" controls muted playsinline preload="metadata"
+                               aria-labelledby="krea_60-title krea_60-native-label" poster="assets/posters/krea_60_lr.jpg" src="assets/videos/krea_60_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="krea_60-arlift-label">ARLIFT <span class="dimensions">1664 × 960</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
+                               aria-labelledby="krea_60-title krea_60-arlift-label" poster="assets/posters/krea_60.jpg" src="assets/videos/krea_60.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="krea_60-title">Dancer in Rehearsal</figcaption>
+              </figure>
             </div>
           </section>
           <section class="film-group longlive" aria-labelledby="longlive-title">
@@ -1023,6 +547,90 @@
                 </div>
                 <figcaption class="caption" id="longlive_mountain_valley-title">River Through a Misty Valley</figcaption>
               </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_03-native-label">Native <span class="dimensions">1280 × 704</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1280" height="704" controls muted playsinline preload="metadata"
+                               aria-labelledby="longlive_03-title longlive_03-native-label" poster="assets/posters/longlive_03_lr.jpg" src="assets/videos/longlive_03_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_03-arlift-label">ARLIFT <span class="dimensions">2560 × 1408</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
+                               aria-labelledby="longlive_03-title longlive_03-arlift-label" poster="assets/posters/longlive_03.jpg" src="assets/videos/longlive_03.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="longlive_03-title">Cat on a Windowsill</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_21-native-label">Native <span class="dimensions">1280 × 704</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1280" height="704" controls muted playsinline preload="metadata"
+                               aria-labelledby="longlive_21-title longlive_21-native-label" poster="assets/posters/longlive_21_lr.jpg" src="assets/videos/longlive_21_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_21-arlift-label">ARLIFT <span class="dimensions">2560 × 1408</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
+                               aria-labelledby="longlive_21-title longlive_21-arlift-label" poster="assets/posters/longlive_21.jpg" src="assets/videos/longlive_21.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="longlive_21-title">Waves on a Rocky Beach</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_27-native-label">Native <span class="dimensions">1280 × 704</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1280" height="704" controls muted playsinline preload="metadata"
+                               aria-labelledby="longlive_27-title longlive_27-native-label" poster="assets/posters/longlive_27_lr.jpg" src="assets/videos/longlive_27_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_27-arlift-label">ARLIFT <span class="dimensions">2560 × 1408</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
+                               aria-labelledby="longlive_27-title longlive_27-arlift-label" poster="assets/posters/longlive_27.jpg" src="assets/videos/longlive_27.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="longlive_27-title">Rabbit Beside a Wicker Basket</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_44-native-label">Native <span class="dimensions">1280 × 704</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1280" height="704" controls muted playsinline preload="metadata"
+                               aria-labelledby="longlive_44-title longlive_44-native-label" poster="assets/posters/longlive_44_lr.jpg" src="assets/videos/longlive_44_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_44-arlift-label">ARLIFT <span class="dimensions">2560 × 1408</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
+                               aria-labelledby="longlive_44-title longlive_44-arlift-label" poster="assets/posters/longlive_44.jpg" src="assets/videos/longlive_44.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="longlive_44-title">Steaming Geothermal Pool</figcaption>
+              </figure>
             </div>
           </section>
           <section class="film-group minimax" aria-labelledby="minimax-title">
@@ -1030,6 +638,90 @@
               <h3 class="model-name" id="minimax-title">MiniMax-H3</h3>
             </header>
             <div class="film-list">
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_01-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
+                               aria-labelledby="minimax_01-title minimax_01-native-label" poster="assets/posters/minimax_01_lr.jpg" src="assets/videos/minimax_01_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_01-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
+                               aria-labelledby="minimax_01-title minimax_01-arlift-label" poster="assets/posters/minimax_01.jpg" src="assets/videos/minimax_01.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="minimax_01-title">Flower Market at Dawn</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_05-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
+                               aria-labelledby="minimax_05-title minimax_05-native-label" poster="assets/posters/minimax_05_lr.jpg" src="assets/videos/minimax_05_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_05-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
+                               aria-labelledby="minimax_05-title minimax_05-arlift-label" poster="assets/posters/minimax_05.jpg" src="assets/videos/minimax_05.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="minimax_05-title">Folding Laundry at Night</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_06-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
+                               aria-labelledby="minimax_06-title minimax_06-native-label" poster="assets/posters/minimax_06_lr.jpg" src="assets/videos/minimax_06_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_06-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
+                               aria-labelledby="minimax_06-title minimax_06-arlift-label" poster="assets/posters/minimax_06.jpg" src="assets/videos/minimax_06.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="minimax_06-title">Arctic Fox at Dusk</figcaption>
+              </figure>
+              <figure class="film">
+                <div class="film-player">
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_08-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
+                               aria-labelledby="minimax_08-title minimax_08-native-label" poster="assets/posters/minimax_08_lr.jpg" src="assets/videos/minimax_08_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_08-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
+                               aria-labelledby="minimax_08-title minimax_08-arlift-label" poster="assets/posters/minimax_08.jpg" src="assets/videos/minimax_08.mp4"></video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="caption" id="minimax_08-title">Tabletop Orrery</figcaption>
+              </figure>
               <figure class="film">
                 <div class="film-player">
                   <div class="film-comparison">
@@ -1055,27 +747,223 @@
                 <div class="film-player">
                   <div class="film-comparison">
                     <div class="film-version">
-                      <p class="film-label" id="minimax_elephant-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <p class="film-label" id="minimax_11-native-label">Native <span class="dimensions">1344 × 768</span></p>
                       <div class="film-picture">
                         <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
-                               aria-labelledby="minimax_elephant-title minimax_elephant-native-label" poster="assets/posters/minimax_elephant_lr.jpg" src="assets/videos/minimax_elephant_lr.mp4"></video>
+                               aria-labelledby="minimax_11-title minimax_11-native-label" poster="assets/posters/minimax_11_lr.jpg" src="assets/videos/minimax_11_lr.mp4"></video>
                       </div>
                     </div>
                     <div class="film-version">
-                      <p class="film-label" id="minimax_elephant-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <p class="film-label" id="minimax_11-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
                       <div class="film-picture">
                         <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
-                               aria-labelledby="minimax_elephant-title minimax_elephant-arlift-label" poster="assets/posters/minimax_elephant.jpg" src="assets/videos/minimax_elephant.mp4"></video>
+                               aria-labelledby="minimax_11-title minimax_11-arlift-label" poster="assets/posters/minimax_11.jpg" src="assets/videos/minimax_11.mp4"></video>
                       </div>
                     </div>
                   </div>
                 </div>
-                <figcaption class="caption" id="minimax_elephant-title">Elephant at a Waterhole</figcaption>
+                <figcaption class="caption" id="minimax_11-title">Botanical Conservatory</figcaption>
               </figure>
             </div>
           </section>
         </div>
       </div>
+    </section>
+
+    <section class="results" id="matched-frames" aria-labelledby="frames-title">
+      <header class="section-heading">
+        <h2 id="frames-title">Matched Frames</h2>
+        <p>Each scene uses the same prompt and seed across methods. Read across a row to follow one method over time, or down a column to compare methods at the same frame.</p>
+        <p class="caption reading-note">Frames are numbered from zero at 16 fps. Select a frame to zoom all three images in its column by 2.5×. Select again to restore the full frames.</p>
+      </header>
+      <section class="frame-family" aria-labelledby="krea-frames-title">
+        <h3 class="model-name" id="krea-frames-title">Krea Realtime 14B</h3>
+        <figure class="frame-case" aria-labelledby="rabbit-by-a-window-title">
+          <figcaption>
+            <h4 id="rabbit-by-a-window-title">Rabbit by a Window</h4>
+            <p class="caption" id="rabbit-by-a-window-cue">Look at the fine hairs along the backlit edges of the rabbit’s ears.</p>
+          </figcaption>
+          <div class="matrix-wrap">
+            <table class="frame-matrix" data-zoom-target="subject" aria-labelledby="rabbit-by-a-window-title" aria-describedby="rabbit-by-a-window-cue">
+              <colgroup><col class="method-col"><col span="4"></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Method</th>
+                  <th scope="col" data-frame="0" data-focus-x="0.57" data-focus-y="0.283" id="rabbit-by-a-window-f0">Frame 0</th>
+                  <th scope="col" data-frame="37" data-focus-x="0.661" data-focus-y="0.285" id="rabbit-by-a-window-f37">Frame 37</th>
+                  <th scope="col" data-frame="74" data-focus-x="0.71" data-focus-y="0.3" id="rabbit-by-a-window-f74">Frame 74</th>
+                  <th scope="col" data-frame="111" data-focus-x="0.723" data-focus-y="0.299" id="rabbit-by-a-window-f111">Frame 111</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" id="rabbit-by-a-window-cinescale">CineScale</th>
+                  <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f0">
+                    <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/cinescale-000.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 0" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f37">
+                    <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/cinescale-037.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 37" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f74">
+                    <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/cinescale-074.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 74" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-cinescale rabbit-by-a-window-f111">
+                    <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/cinescale-111.webp" width="1300" height="750" alt="Rabbit by a Window, CineScale, frame 111" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" id="rabbit-by-a-window-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
+                  <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f0">
+                    <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/freeswim-000.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 0" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f37">
+                    <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/freeswim-037.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 37" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f74">
+                    <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/freeswim-074.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 74" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-freeswim rabbit-by-a-window-f111">
+                    <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/freeswim-111.webp" width="1300" height="750" alt="Rabbit by a Window, FreeSwim*, frame 111" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" id="rabbit-by-a-window-arlift" class="arlift-name">ARLIFT</th>
+                  <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f0">
+                    <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/arlift-000.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 0" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f37">
+                    <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/arlift-037.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 37" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f74">
+                    <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/arlift-074.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 74" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="rabbit-by-a-window-arlift rabbit-by-a-window-f111">
+                    <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
+                      <img src="assets/frames/rabbit-by-a-window/arlift-111.webp" width="1300" height="750" alt="Rabbit by a Window, ARLIFT, frame 111" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      </section>
+      <section class="frame-family" aria-labelledby="longlive-frames-title">
+        <h3 class="model-name" id="longlive-frames-title">LongLive 2.0 5B</h3>
+        <figure class="frame-case" aria-labelledby="painted-ceramic-tiles-title">
+          <figcaption>
+            <h4 id="painted-ceramic-tiles-title">Painted Ceramic Tiles</h4>
+            <p class="caption" id="painted-ceramic-tiles-cue">Follow the painted lines on the front tile as the viewing angle shifts.</p>
+          </figcaption>
+          <div class="matrix-wrap">
+            <table class="frame-matrix" aria-labelledby="painted-ceramic-tiles-title" aria-describedby="painted-ceramic-tiles-cue">
+              <colgroup><col class="method-col"><col span="4"></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Method</th>
+                  <th scope="col" data-frame="0" data-focus-x="0.59" data-focus-y="0.63" id="painted-ceramic-tiles-f0">Frame 0</th>
+                  <th scope="col" data-frame="37" data-focus-x="0.57" data-focus-y="0.63" id="painted-ceramic-tiles-f37">Frame 37</th>
+                  <th scope="col" data-frame="74" data-focus-x="0.55" data-focus-y="0.62" id="painted-ceramic-tiles-f74">Frame 74</th>
+                  <th scope="col" data-frame="111" data-focus-x="0.55" data-focus-y="0.61" id="painted-ceramic-tiles-f111">Frame 111</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" id="painted-ceramic-tiles-cinescale">CineScale</th>
+                  <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f0">
+                    <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/cinescale-000.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 0" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f37">
+                    <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/cinescale-037.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 37" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f74">
+                    <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/cinescale-074.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 74" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-cinescale painted-ceramic-tiles-f111">
+                    <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/cinescale-111.webp" width="1300" height="715" alt="Painted Ceramic Tiles, CineScale, frame 111" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" id="painted-ceramic-tiles-freeswim">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
+                  <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f0">
+                    <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/freeswim-000.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 0" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f37">
+                    <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/freeswim-037.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 37" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f74">
+                    <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/freeswim-074.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 74" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-freeswim painted-ceramic-tiles-f111">
+                    <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/freeswim-111.webp" width="1300" height="715" alt="Painted Ceramic Tiles, FreeSwim*, frame 111" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" id="painted-ceramic-tiles-arlift" class="arlift-name">ARLIFT</th>
+                  <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f0">
+                    <button class="frame-view" type="button" data-frame="0" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/arlift-000.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 0" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f37">
+                    <button class="frame-view" type="button" data-frame="37" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/arlift-037.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 37" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f74">
+                    <button class="frame-view" type="button" data-frame="74" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/arlift-074.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 74" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                  <td headers="painted-ceramic-tiles-arlift painted-ceramic-tiles-f111">
+                    <button class="frame-view" type="button" data-frame="111" aria-pressed="false">
+                      <img src="assets/frames/painted-ceramic-tiles/arlift-111.webp" width="1300" height="715" alt="Painted Ceramic Tiles, ARLIFT, frame 111" loading="lazy" decoding="async">
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      </section>
     </section>
 
     <section class="evaluation" id="evaluation" aria-labelledby="evaluation-title">
