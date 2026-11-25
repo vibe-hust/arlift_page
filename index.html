@@ -969,6 +969,42 @@
     <section class="evaluation" id="evaluation" aria-labelledby="evaluation-title">
       <header class="section-heading"><h2 id="evaluation-title">Evaluation</h2></header>
       <figure class="score-figure">
+        <h3 id="preference-title">MLLM Preference Study on Krea and LongLive</h3>
+        <div class="score-wrap">
+          <table class="score-table preference-table" aria-labelledby="preference-title" aria-describedby="preference-note">
+            <thead>
+              <tr>
+                <th scope="col">Method</th>
+                <th scope="col">GPT Astra (Medium)</th>
+                <th scope="col">GPT Astra (XHigh)</th>
+                <th scope="col">DeepSeek-1017-Flash (Low)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">CineScale</th>
+                <td>24<span class="percent-unit">%</span></td>
+                <td>25<span class="percent-unit">%</span></td>
+                <td>36<span class="percent-unit">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
+                <td>0<span class="percent-unit">%</span></td>
+                <td>2<span class="percent-unit">%</span></td>
+                <td>15<span class="percent-unit">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>ARLIFT</strong></th>
+                <td><strong>76<span class="percent-unit">%</span></strong></td>
+                <td><strong>73<span class="percent-unit">%</span></strong></td>
+                <td><strong>49<span class="percent-unit">%</span></strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <figcaption class="caption" id="preference-note">Each evaluator configuration judged the same 20 matched triplets (10 per backbone) over five rounds, using six evenly spaced frames per video with method identities hidden. Percentages are based on 100 selections per configuration, 50 from each backbone.</figcaption>
+      </figure>
+      <figure class="score-figure">
         <h3 id="vbench-title">VBench on LongLive 2.0 5B</h3>
         <div class="score-wrap">
           <table class="score-table vbench-table" aria-labelledby="vbench-title" aria-describedby="vbench-note">
@@ -1024,42 +1060,6 @@
           </table>
         </div>
         <figcaption class="caption" id="vbench-note">Each method was evaluated on 24 videos at <span class="dimensions">2560 × 1408</span> over the <span class="unbroken">1.5–4.0 s</span> window. Scores are percentages, and Mean gives equal weight to all five metrics.</figcaption>
-      </figure>
-      <figure class="score-figure">
-        <h3 id="preference-title">MLLM Preference Study on Krea and LongLive</h3>
-        <div class="score-wrap">
-          <table class="score-table preference-table" aria-labelledby="preference-title" aria-describedby="preference-note">
-            <thead>
-              <tr>
-                <th scope="col">Method</th>
-                <th scope="col">GPT Astra (Medium)</th>
-                <th scope="col">GPT Astra (XHigh)</th>
-                <th scope="col">DeepSeek-1017-Flash (Low)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">CineScale</th>
-                <td>24<span class="percent-unit">%</span></td>
-                <td>25<span class="percent-unit">%</span></td>
-                <td>36<span class="percent-unit">%</span></td>
-              </tr>
-              <tr>
-                <th scope="row">FreeSwim<sup aria-describedby="freeswim-note">*</sup></th>
-                <td>0<span class="percent-unit">%</span></td>
-                <td>2<span class="percent-unit">%</span></td>
-                <td>15<span class="percent-unit">%</span></td>
-              </tr>
-              <tr>
-                <th scope="row"><strong>ARLIFT</strong></th>
-                <td><strong>76<span class="percent-unit">%</span></strong></td>
-                <td><strong>73<span class="percent-unit">%</span></strong></td>
-                <td><strong>49<span class="percent-unit">%</span></strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <figcaption class="caption" id="preference-note">Each evaluator configuration judged the same 20 matched triplets (10 per backbone) over five rounds, using six evenly spaced frames per video with method identities hidden. Percentages are based on 100 selections per configuration, 50 from each backbone.</figcaption>
       </figure>
       <figure class="score-figure">
         <h3 id="minimax-ic-title">Comparison with NVIDIA IC on MiniMax-H3</h3>
