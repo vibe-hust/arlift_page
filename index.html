@@ -1062,12 +1062,13 @@
         <figcaption class="caption" id="vbench-note">Each method was evaluated on 24 videos at <span class="dimensions">2560 × 1408</span> over the <span class="unbroken">1.5–4.0 s</span> window. Scores are percentages, and Mean gives equal weight to all five metrics.</figcaption>
       </figure>
       <figure class="score-figure">
-        <h3 id="minimax-ic-title">Comparison with NVIDIA IC on MiniMax-H3</h3>
+        <h3 id="minimax-ic-title">Training-Free ARLIFT vs. Training-Based NVIDIA IC on MiniMax-H3</h3>
         <div class="score-wrap">
           <table class="score-table minimax-table" aria-labelledby="minimax-ic-title" aria-describedby="minimax-note">
             <thead>
               <tr>
                 <th scope="col">Method</th>
+                <th scope="col">Training requirement</th>
                 <th scope="col">Imaging quality</th>
                 <th scope="col">Aesthetic quality</th>
                 <th scope="col">Subject consistency</th>
@@ -1079,6 +1080,7 @@
             <tbody>
               <tr>
                 <th scope="row">NVIDIA IC</th>
+                <td class="training-requirement"><strong>Training-based</strong></td>
                 <td><strong>72<span class="decimal-part">.76</span></strong></td>
                 <td>62<span class="decimal-part">.55</span></td>
                 <td>97<span class="decimal-part">.80</span></td>
@@ -1088,6 +1090,7 @@
               </tr>
               <tr>
                 <th scope="row">ARLIFT</th>
+                <td class="training-requirement"><strong>Training-free</strong></td>
                 <td>72<span class="decimal-part">.61</span></td>
                 <td><strong>62<span class="decimal-part">.64</span></strong></td>
                 <td><strong>97<span class="decimal-part">.84</span></strong></td>
@@ -1098,7 +1101,7 @@
             </tbody>
           </table>
         </div>
-        <figcaption class="caption" id="minimax-note">Both methods use the same 12 <span class="dimensions">1344 × 768</span> drafts and eight high-resolution sampling steps to generate <span class="dimensions">2688 × 1536</span> videos on the bidirectional MiniMax-H3 model. NVIDIA IC uses a task-trained LoRA and ARLIFT uses training-free spatial guidance. Their five-metric means are close at 85.84% and 85.89%, respectively.</figcaption>
+        <figcaption class="caption" id="minimax-note"><strong>ARLIFT achieves comparable overall quality without additional training.</strong> Both methods use the same 12 <span class="dimensions">1344 × 768</span> drafts and eight high-resolution sampling steps to generate <span class="dimensions">2688 × 1536</span> videos on the bidirectional MiniMax-H3 model. NVIDIA IC uses a task-trained LoRA and ARLIFT uses training-free spatial guidance. Their five-metric means are close at 85.84% and 85.89%, respectively.</figcaption>
       </figure>
       <p class="caption tables-footnote" id="freeswim-note">* FreeSwim is adapted to the autoregressive backbone.</p>
     </section>

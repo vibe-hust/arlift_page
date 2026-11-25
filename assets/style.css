@@ -455,6 +455,7 @@ sup { font-size: .74em; line-height: 0; vertical-align: .31em; }
 .decimal-part, .percent-unit { display: inline-block; text-align: left; }
 .decimal-part { width: .86em; }
 .minimax-table .decimal-part { width: 1.39em; }
+.minimax-table .training-requirement { text-align: left; }
 .percent-unit { width: .8em; }
 .score-table:not(.preference-table) th:last-child { width: 8%; }
 .preference-table th:first-child { width: 20%; }
@@ -484,7 +485,10 @@ sup { font-size: .74em; line-height: 0; vertical-align: .31em; }
     align-items: center;
     border-block: 1px solid var(--rule);
   }
-  .minimax-table { grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr)); }
+  .minimax-table {
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  }
   .preference-table {
     grid-template-rows: repeat(4, auto);
     grid-template-columns: minmax(0, 2.5fr) repeat(3, minmax(0, 1fr));
@@ -493,6 +497,7 @@ sup { font-size: .74em; line-height: 0; vertical-align: .31em; }
   .score-table th:first-child { width: auto; }
   .score-table thead th { border: 0; padding-left: 0; text-align: left; overflow-wrap: anywhere; }
   .score-table td { padding-inline: 0; text-align: center; white-space: nowrap; }
+  .minimax-table .training-requirement { text-align: center; white-space: normal; }
   .score-table tbody th { justify-self: center; text-align: center; }
   .score-table:not(.minimax-table) tbody th { writing-mode: vertical-rl; white-space: nowrap; }
   .score-table tbody tr:last-child > * { border-bottom: 0; }
