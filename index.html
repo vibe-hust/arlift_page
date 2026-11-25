@@ -12,31 +12,42 @@
   <script defer src="assets/trace.js"></script>
   <script defer src="assets/details.js"></script>
   <script defer src="assets/screening.js"></script>
-  <link rel="stylesheet" href="./project-meta.css">
-  <link rel="canonical" href="https://vibe-hust.github.io/arlift_page/">
+  <script defer src="assets/magnifier.js"></script>
 </head>
 <body>
-  <main>
-    <nav class="article-nav" aria-label="Article sections">
-      <div class="nav-links">
-        <span class="subtitle">Supplementary Videos</span>
-        <div class="chapter-links">
-          <a href="#overview">Overview</a>
-          <a href="#method">Method</a>
-          <a href="#matched-frames">Matched Frames</a>
-          <a href="#generated-videos">Generated Videos</a>
-          <a href="#evaluation">Evaluation</a>
-        </div>
+  <nav class="article-nav" aria-label="Article sections">
+    <div class="nav-links">
+      <div class="chapter-links">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#matched-frames">Matched Frames</a>
+        <a href="#generated-videos">Generated Videos</a>
+        <a href="#evaluation">Evaluation</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
+  <main>
     <header class="opening" id="overview" aria-labelledby="paper-title">
       <h1 id="paper-title">
         <span class="title-line"><span class="arlift-name">ARLIFT</span>: <span class="unbroken">Training-Free</span></span>
         <span class="title-line">Resolution Extrapolation</span>
         <span class="title-scope">for <span class="unbroken">Few-Step</span> Autoregressive <span class="unbroken">Video Generation</span></span>
       </h1>
-      <div class="project-meta"><p class="project-authors"><a href="https://github.com/TetuDegit">Gezhi Zhu</a><sup>1</sup> · <a href="https://www.cwi.nl/en/people/xuemei-zhou/">Xuemei Zhou</a><sup>2</sup> · <a href="https://tenglon.github.io/">Teng Long</a><sup>3</sup> · <a href="https://taohu.me/">Vincent Tao Hu</a><sup>1</sup></p><p class="project-affiliations"><sup>1</sup>Huazhong University of Science and Technology<br><sup>2</sup>Centrum voor Wiskunde en Informatica (CWI) · <sup>3</sup>University of Trento</p><p class="project-links"><a href="https://github.com/vibe-hust/arlift_code">Code</a> · <a href="https://github.com/vibe-hust">VibeLab</a></p></div>
+      <div class="paper-byline">
+        <ul class="paper-authors" role="list" aria-label="Authors">
+          <li>Gezhi Zhu<sup>1</sup></li>
+          <li>Xuemei Zhou<sup>2</sup></li>
+          <li>Teng Long<sup>3</sup></li>
+          <li>Vincent Tao Hu<sup>1</sup></li>
+        </ul>
+        <ul class="paper-affiliations" role="list" aria-label="Affiliations">
+          <li><sup>1</sup> Huazhong University of Science and Technology</li>
+          <li><sup>2</sup> Centrum voor Wiskunde en Informatica</li>
+          <li><sup>3</sup> University of Trento</li>
+        </ul>
+        <a class="paper-code" href="https://github.com/vibe-hust/arlift_code" target="_blank" rel="noopener noreferrer">Code on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
       <p class="intro">ARLIFT uses the <strong>model’s own draft</strong> of the whole video to guide generation at higher resolution. On Krea and LongLive, the same model generates frames <strong>twice as wide and twice as tall</strong> without retraining.</p>
     </header>
 
@@ -145,7 +156,7 @@
                 <path stroke="#7b8e77" stroke-width="1.1" d="M293 181q14 2 27-1m-15 4 9-1"/>
                 <path stroke="#b47c61" opacity=".72" stroke-width="1.6" d="m303 184 10 1m-10 3 7 1m-5 3h4"/>
               </g>
-
+              
             </defs>
           </svg>
           <svg class="sail-story" id="sailing-board" viewBox="0 0 760 417" role="img" aria-labelledby="sail-description">
@@ -919,23 +930,46 @@
           <section class="film-group krea" aria-labelledby="krea-title">
             <header class="film-heading">
               <h3 class="model-name" id="krea-title">Krea Realtime 14B</h3>
-              <p class="film-metadata">1664 × 960</p>
             </header>
             <div class="film-list">
               <figure class="film">
                 <div class="film-player">
-                  <div class="film-picture">
-                    <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
-                           aria-labelledby="krea_tree_frog-title" poster="assets/posters/krea_tree_frog.jpg" src="assets/videos/krea_tree_frog.mp4"></video>
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="krea_tree_frog-native-label">Native <span class="dimensions">832 × 480</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="832" height="480" controls muted playsinline preload="metadata"
+                               aria-labelledby="krea_tree_frog-title krea_tree_frog-native-label" poster="assets/posters/krea_tree_frog_lr.jpg" src="assets/videos/krea_tree_frog_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="krea_tree_frog-arlift-label">ARLIFT <span class="dimensions">1664 × 960</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
+                               aria-labelledby="krea_tree_frog-title krea_tree_frog-arlift-label" poster="assets/posters/krea_tree_frog.jpg" src="assets/videos/krea_tree_frog.mp4"></video>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <figcaption class="caption" id="krea_tree_frog-title">Tree Frog on a Leaf</figcaption>
               </figure>
               <figure class="film">
                 <div class="film-player">
-                  <div class="film-picture">
-                    <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
-                           aria-labelledby="krea_folding_fan-title" poster="assets/posters/krea_folding_fan.jpg" src="assets/videos/krea_folding_fan.mp4"></video>
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="krea_folding_fan-native-label">Native <span class="dimensions">832 × 480</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="832" height="480" controls muted playsinline preload="metadata"
+                               aria-labelledby="krea_folding_fan-title krea_folding_fan-native-label" poster="assets/posters/krea_folding_fan_lr.jpg" src="assets/videos/krea_folding_fan_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="krea_folding_fan-arlift-label">ARLIFT <span class="dimensions">1664 × 960</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1664" height="960" controls playsinline preload="metadata"
+                               aria-labelledby="krea_folding_fan-title krea_folding_fan-arlift-label" poster="assets/posters/krea_folding_fan.jpg" src="assets/videos/krea_folding_fan.mp4"></video>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <figcaption class="caption" id="krea_folding_fan-title">Performer with a Folding Fan</figcaption>
@@ -945,23 +979,46 @@
           <section class="film-group longlive" aria-labelledby="longlive-title">
             <header class="film-heading">
               <h3 class="model-name" id="longlive-title">LongLive 2.0 5B</h3>
-              <p class="film-metadata">2560 × 1408</p>
             </header>
             <div class="film-list">
               <figure class="film">
                 <div class="film-player">
-                  <div class="film-picture">
-                    <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
-                           aria-labelledby="longlive_violinist-title" poster="assets/posters/longlive_violinist.jpg" src="assets/videos/longlive_violinist.mp4"></video>
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_violinist-native-label">Native <span class="dimensions">1280 × 704</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1280" height="704" controls muted playsinline preload="metadata"
+                               aria-labelledby="longlive_violinist-title longlive_violinist-native-label" poster="assets/posters/longlive_violinist_lr.jpg" src="assets/videos/longlive_violinist_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_violinist-arlift-label">ARLIFT <span class="dimensions">2560 × 1408</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
+                               aria-labelledby="longlive_violinist-title longlive_violinist-arlift-label" poster="assets/posters/longlive_violinist.jpg" src="assets/videos/longlive_violinist.mp4"></video>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <figcaption class="caption" id="longlive_violinist-title">Violinist in Rehearsal</figcaption>
               </figure>
               <figure class="film">
                 <div class="film-player">
-                  <div class="film-picture">
-                    <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
-                           aria-labelledby="longlive_mountain_valley-title" poster="assets/posters/longlive_mountain_valley.jpg" src="assets/videos/longlive_mountain_valley.mp4"></video>
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_mountain_valley-native-label">Native <span class="dimensions">1280 × 704</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1280" height="704" controls muted playsinline preload="metadata"
+                               aria-labelledby="longlive_mountain_valley-title longlive_mountain_valley-native-label" poster="assets/posters/longlive_mountain_valley_lr.jpg" src="assets/videos/longlive_mountain_valley_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="longlive_mountain_valley-arlift-label">ARLIFT <span class="dimensions">2560 × 1408</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2560" height="1408" controls playsinline preload="metadata"
+                               aria-labelledby="longlive_mountain_valley-title longlive_mountain_valley-arlift-label" poster="assets/posters/longlive_mountain_valley.jpg" src="assets/videos/longlive_mountain_valley.mp4"></video>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <figcaption class="caption" id="longlive_mountain_valley-title">River Through a Misty Valley</figcaption>
@@ -971,23 +1028,46 @@
           <section class="film-group minimax" aria-labelledby="minimax-title">
             <header class="film-heading">
               <h3 class="model-name" id="minimax-title">MiniMax-H3</h3>
-              <p class="film-metadata">2688 × 1536</p>
             </header>
             <div class="film-list">
               <figure class="film">
                 <div class="film-player">
-                  <div class="film-picture">
-                    <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
-                           aria-labelledby="minimax_kayaker-title" poster="assets/posters/minimax_kayaker.jpg" src="assets/videos/minimax_kayaker.mp4"></video>
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_kayaker-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
+                               aria-labelledby="minimax_kayaker-title minimax_kayaker-native-label" poster="assets/posters/minimax_kayaker_lr.jpg" src="assets/videos/minimax_kayaker_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_kayaker-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
+                               aria-labelledby="minimax_kayaker-title minimax_kayaker-arlift-label" poster="assets/posters/minimax_kayaker.jpg" src="assets/videos/minimax_kayaker.mp4"></video>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <figcaption class="caption" id="minimax_kayaker-title">Kayaker on a Mountain Lake</figcaption>
               </figure>
               <figure class="film">
                 <div class="film-player">
-                  <div class="film-picture">
-                    <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
-                           aria-labelledby="minimax_elephant-title" poster="assets/posters/minimax_elephant.jpg" src="assets/videos/minimax_elephant.mp4"></video>
+                  <div class="film-comparison">
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_elephant-native-label">Native <span class="dimensions">1344 × 768</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="1344" height="768" controls muted playsinline preload="metadata"
+                               aria-labelledby="minimax_elephant-title minimax_elephant-native-label" poster="assets/posters/minimax_elephant_lr.jpg" src="assets/videos/minimax_elephant_lr.mp4"></video>
+                      </div>
+                    </div>
+                    <div class="film-version">
+                      <p class="film-label" id="minimax_elephant-arlift-label">ARLIFT <span class="dimensions">2688 × 1536</span></p>
+                      <div class="film-picture">
+                        <video class="film-video" width="2688" height="1536" controls playsinline preload="metadata"
+                               aria-labelledby="minimax_elephant-title minimax_elephant-arlift-label" poster="assets/posters/minimax_elephant.jpg" src="assets/videos/minimax_elephant.mp4"></video>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <figcaption class="caption" id="minimax_elephant-title">Elephant at a Waterhole</figcaption>
