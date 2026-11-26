@@ -97,6 +97,8 @@ h1 {
 }
 .paper-authors { font-size: 1.2rem; font-weight: 600; }
 .paper-authors li { white-space: nowrap; }
+.paper-authors a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.paper-authors a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .paper-authors sup { margin-inline-start: .12em; }
 .paper-affiliations { margin-block-start: .35rem; color: var(--muted); }
 .paper-code {
