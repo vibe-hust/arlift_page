@@ -7,8 +7,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' file:; script-src 'self' file:; img-src 'self' file:; font-src 'self' file: data:; media-src 'self' file:; base-uri 'none'; form-action 'none'">
   <title>ARLIFT: Training-Free Resolution Extrapolation for Few-Step Autoregressive Video Generation</title>
   <link rel="stylesheet" href="assets/fonts/type.css">
-  <link rel="stylesheet" href="assets/style.css?v=author-links-20261126">
-  <script defer src="assets/navigation.js"></script>
+  <link rel="stylesheet" href="assets/style.css?v=citation-20261126">
+  <script defer src="assets/navigation.js?v=citation-20261126"></script>
   <script defer src="assets/trace.js"></script>
   <script defer src="assets/details.js"></script>
   <script defer src="assets/screening.js"></script>
@@ -23,6 +23,7 @@
         <a href="#generated-videos">Generated Videos</a>
         <a href="#matched-frames">Matched Frames</a>
         <a href="#evaluation">Evaluation</a>
+        <a href="#citation">Citation</a>
       </div>
     </div>
   </nav>
@@ -1104,6 +1105,23 @@
         <figcaption class="caption" id="minimax-note"><strong>ARLIFT gives comparable overall quality without additional training.</strong> NVIDIA IC uses a trained adapter (LoRA); ARLIFT uses the draft to guide the larger video. Both use the same 12 <span class="dimensions">1344 × 768</span> drafts and eight sampling steps to produce <span class="dimensions">2688 × 1536</span> videos with bidirectional MiniMax-H3. The five-metric means are 85.84% for NVIDIA IC and 85.89% for ARLIFT.</figcaption>
       </figure>
       <p class="caption tables-footnote" id="freeswim-note">* FreeSwim is adapted to the autoregressive backbone.</p>
+    </section>
+
+    <section class="citation" id="citation" aria-labelledby="citation-title">
+      <header class="section-heading"><h2 id="citation-title">Citation</h2></header>
+      <div class="citation-card">
+        <div class="citation-bar">
+          <span class="citation-label">BibTeX</span>
+          <button type="button" class="copy-bibtex" data-copy-target="bibtex-code">Copy BibTeX</button>
+        </div>
+        <pre class="bibtex-code" id="bibtex-code"><code>@misc{zhu2026arlift,
+  title={{ARLIFT}: Training-Free Resolution Extrapolation for Few-Step Autoregressive Video Generation},
+  author={Zhu, Gezhi and Zhou, Xuemei and Long, Teng and Hu, Vincent Tao},
+  year={2026},
+  howpublished={Research preprint},
+  url={https://vibe-hust.github.io/arlift_page/}
+}</code></pre>
+      </div>
     </section>
   </main>
 

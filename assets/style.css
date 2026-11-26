@@ -172,9 +172,9 @@ h1 {
 .chapter-links a[aria-current="location"], .chapter-links a:hover { color: var(--accent); }
 .chapter-links a[aria-current="location"]::after, .chapter-links a:hover::after { background: currentColor; }
 
-.opening, .method, .results, .films, .evaluation { scroll-margin-top: calc(var(--nav-height) + 1rem); }
+.opening, .method, .results, .films, .evaluation, .citation { scroll-margin-top: calc(var(--nav-height) + 1rem); }
 .research { padding-top: clamp(3.25rem, 6vw, 4.75rem); }
-.results, .films, .evaluation { margin-top: var(--chapter-space); }
+.results, .films, .evaluation, .citation { margin-top: var(--chapter-space); }
 .section-heading { text-align: center; }
 .section-heading p { margin-top: .7rem; }
 .section-heading .method-guide { margin-top: .875rem; line-height: 1.45; }
@@ -423,7 +423,7 @@ sup { font-size: .74em; line-height: 0; vertical-align: .31em; }
 .media-error { margin-top: .4rem; color: var(--ink); font-size: .94rem; }
 
 .evaluation {
-  padding-bottom: clamp(4.5rem, 7vw, 7rem);
+  padding-bottom: 0;
 }
 .evaluation .section-heading { margin-bottom: 2.3rem; }
 .score-figure + .score-figure { margin-top: 3.1rem; }
@@ -515,3 +515,58 @@ sup { font-size: .74em; line-height: 0; vertical-align: .31em; }
 
 /* GitHub mark inherits the existing button color, including hover states. */
 .github-icon { width: 1em; height: 1em; flex: none; fill: currentColor; stroke: none; }
+
+.citation {
+  padding-bottom: clamp(4.5rem, 7vw, 7rem);
+}
+.citation .section-heading { margin-bottom: 1.5rem; }
+.citation-card {
+  width: min(var(--display-width), calc(100% - var(--display-start)));
+  margin-inline-start: var(--display-start);
+  border: 1px solid var(--rule);
+  border-radius: .45rem;
+  background: var(--surface);
+  overflow: hidden;
+}
+.citation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding: .55rem 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+.citation-label {
+  color: var(--muted);
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.copy-bibtex {
+  padding: .32rem .75rem;
+  border: 1px solid var(--rule);
+  border-radius: .3rem;
+  background: var(--ground);
+  color: var(--ink);
+  font-size: .88rem;
+  font-weight: 600;
+}
+.copy-bibtex:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.bibtex-code {
+  margin: 0;
+  padding: 1.05rem 1.15rem;
+  overflow-x: auto;
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: .88rem;
+  line-height: 1.6;
+}
+.copy-fallback {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
