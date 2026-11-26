@@ -1,10 +1,16 @@
 (() => {
   const nav = document.querySelector('.article-nav');
-  const chapters = Array.from(nav.querySelectorAll('a'), link => ({
+  const chapters = Array.from(nav.querySelectorAll('.chapter-links a[href^="#"]'), link => ({
     link,
     section: document.getElementById(link.hash.slice(1))
   }));
   let scheduled = false;
+
+  function updateNavHeight() {
+    document.documentElement.style.setProperty('--nav-height', `${nav.offsetHeight}px`);
+    scheduleUpdate();
+  }
+  new ResizeObserver(updateNavHeight).observe(nav);
 
   function markChapter() {
     const readingLine = nav.offsetHeight + Math.min(100, window.innerHeight * .16);
