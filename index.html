@@ -55,7 +55,7 @@
       <section class="method" id="method" aria-labelledby="architecture-title">
         <header class="section-heading">
           <h2 id="architecture-title">Method</h2>
-          <p class="method-guide">Watch the mast first. Early in denoising, the draft guides the mast back into place. As that guidance fades, look for the boat’s reflection taking shape in the water. In the next segment, the boat follows its new position in the draft while memory helps preserve its appearance.</p>
+          <p class="method-guide">Watch the mast: the draft guides it into place early in generation. As that guidance fades, details such as the reflection emerge. In the next segment, memory helps keep the boat’s appearance consistent as it moves.</p>
         </header>
         <figure class="sailing-study" aria-label="Illustrated animation of ARLIFT generating a sailboat video">
           <svg class="sail-library" width="0" height="0" aria-hidden="true" focusable="false">
@@ -1002,7 +1002,7 @@
             </tbody>
           </table>
         </div>
-        <figcaption class="caption" id="preference-note">Each evaluator configuration judged the same 20 matched triplets (10 per backbone) over five rounds, using six evenly spaced frames per video with method identities hidden. Percentages are based on 100 selections per configuration, 50 from each backbone.</figcaption>
+        <figcaption class="caption" id="preference-note">Each AI evaluator chose between three methods using six evenly spaced frames per video. Method names were hidden. Each evaluator setting judged the same 20 matched triplets (10 per backbone) over five rounds: 100 choices, split equally between backbones (50 each).</figcaption>
       </figure>
       <figure class="score-figure">
         <h3 id="vbench-title">VBench on LongLive 2.0 5B</h3>
@@ -1101,7 +1101,7 @@
             </tbody>
           </table>
         </div>
-        <figcaption class="caption" id="minimax-note"><strong>ARLIFT achieves comparable overall quality without additional training.</strong> Both methods use the same 12 <span class="dimensions">1344 × 768</span> drafts and eight high-resolution sampling steps to generate <span class="dimensions">2688 × 1536</span> videos on the bidirectional MiniMax-H3 model. NVIDIA IC uses a task-trained LoRA and ARLIFT uses training-free spatial guidance. Their five-metric means are close at 85.84% and 85.89%, respectively.</figcaption>
+        <figcaption class="caption" id="minimax-note"><strong>ARLIFT gives comparable overall quality without additional training.</strong> NVIDIA IC uses a trained adapter (LoRA); ARLIFT uses the draft to guide the larger video. Both use the same 12 <span class="dimensions">1344 × 768</span> drafts and eight sampling steps to produce <span class="dimensions">2688 × 1536</span> videos with bidirectional MiniMax-H3. The five-metric means are 85.84% for NVIDIA IC and 85.89% for ARLIFT.</figcaption>
       </figure>
       <p class="caption tables-footnote" id="freeswim-note">* FreeSwim is adapted to the autoregressive backbone.</p>
     </section>
