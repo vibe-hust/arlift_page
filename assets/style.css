@@ -510,3 +510,6 @@ sup { font-size: .74em; line-height: 0; vertical-align: .31em; }
 @media (max-width: 40rem) {
   .section-heading p { font-size: 1.03rem; }
 }
+
+/* GitHub mark inherits the existing button color, including hover states. */
+.github-icon { width: 1em; height: 1em; flex: none; fill: currentColor; stroke: none; }
