@@ -101,12 +101,18 @@ h1 {
 .paper-authors a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .paper-authors sup { margin-inline-start: .12em; }
 .paper-affiliations { margin-block-start: .35rem; color: var(--muted); }
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin-block-start: 1.25rem;
+}
 .paper-code {
   display: inline-flex;
   align-items: center;
   gap: .55rem;
   min-height: 2.75rem;
-  margin-block-start: 1.25rem;
   padding: .5rem .95rem;
   border: 1px solid transparent;
   border-radius: .35rem;
@@ -116,6 +122,16 @@ h1 {
   text-decoration: none;
 }
 .paper-code:hover { background: var(--ink); }
+.paper-code-secondary {
+  border-color: var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+.paper-code-secondary:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--ground);
+}
 @media (forced-colors: active) {
   .paper-code { border-color: currentColor; }
 }
